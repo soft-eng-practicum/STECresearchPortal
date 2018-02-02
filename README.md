@@ -35,8 +35,8 @@ Software Development II course (ITEC 3870).
 
 ### Members
 
-* [Dave Chesser](mailto:dchesser@ggc.edu)
+1. [Dave Chesser](mailto:dchesser@ggc.edu)
 
-  As the *lead programmer* and *documentation lead*, Dave will be
-  leading the way in the design and implementation of the project as
-  well as documenting the internal code and API.
+   As the *lead programmer* and *documentation lead*, Dave will be
+   leading the way in the design and implementation of the project as
+   well as documenting the internal code and API.
