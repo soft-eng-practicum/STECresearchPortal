@@ -40,3 +40,8 @@ Software Development II course (ITEC 3870).
    As the *lead programmer* and *documentation lead*, Dave will be
    leading the way in the design and implementation of the project as
    well as documenting the internal code and API.
+
+2. [Jacky Sylvain](mailto:jsylvain@ggc.edu)
+
+   I will be working as *client liaison* working with the SST administration and professor. Also I will be responsible for the database, files management, help document the project.
+   
