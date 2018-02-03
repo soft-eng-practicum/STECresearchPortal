@@ -45,3 +45,8 @@ Software Development II course (ITEC 3870).
 
    I will be working as *client liaison* working with the SST administration and professor. Also I will be responsible for the database, files management, help document the project.
    
+3. [Austin Bond] (mailto:abond1@ggc.edu)
+
+	I will be working on UI/UX design in order to design the interface of the website. 
+	I will also be the team manager, meaning that I will plan out meetings for our group as well as document our meetings and what occurred in them.
+   
