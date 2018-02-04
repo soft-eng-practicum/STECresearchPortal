@@ -24,6 +24,15 @@ About
 >
 > — Dr. Cengiz Günay
 
+Project Tracking
+----------------
+
+As required, the project can be tracked via:
+
+* [GitHub](https://github.com/soft-eng-practicum/STECresearchPortal)
+* [ZenHub](https://app.zenhub.com/workspace/o/soft-eng-practicum/stecresearchportal/)
+* [`#cbc` on Slack](https://ggc-dev.slack.com/messages/G8W7Z689F/)
+
 Meet the Team 📦
 ---------------
 
@@ -44,4 +53,4 @@ Software Development II course (ITEC 3870).
 2. [Jacky Sylvain](mailto:jsylvain@ggc.edu)
 
    I will be working as *client liaison* working with the SST administration and professor. Also I will be responsible for the database, files management, help document the project.
-   
+
