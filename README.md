@@ -50,13 +50,24 @@ Software Development II course (ITEC 3870).
    leading the way in the design and implementation of the project as
    well as documenting the internal code and API.
 
-2. [Jacky Sylvain](mailto:jsylvain@ggc.edu)
+   Addendum: From Jacky's departure, I have also taken the role of
+   *client liason*.
 
-   I will be working as *client liaison* working with the SST administration and professor. Also I will be responsible for the database, files management, help document the project.
+2. ~~[Jacky Sylvain](mailto:jsylvain@ggc.edu)~~
+
+   ~~I will be working as *client liaison* working with the SST
+   administration and professor. Also I will be responsible for the
+   database, files management, help document the project.~~
+
+   Due to some external circumstances, Jacky will not be amongst us
+   for this project.
    
 3. [Austin Bond](mailto:abond1@ggc.edu)
 
-	I will be working on *UI/UX Design* in order to design the interface
-	of the website.  I will also be the *team manager*, meaning that I
-	will plan out meetings for our group as well as document our
-	meetings and what occurred in them.
+	I will be working on *UI/UX Design* in order to design the
+	interface of the website.  I will also be the *team manager*,
+	meaning that I will plan out meetings for our group as well as
+	document our meetings and what occurred in them.
+
+	Addendum: From Jacky's departure, I have also taken the role of
+	*database manager*.
