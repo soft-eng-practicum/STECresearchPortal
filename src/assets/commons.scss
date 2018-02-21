@@ -1,0 +1,41 @@
+$c-ggc: #00704a;
+$c-ggc-l: #7dbf2a;
+$c-ggc-gold: #e7a931;
+
+@import "banner";
+
+body {
+    background-color: #eef0f2;
+}
+
+.opp-list {
+    & {
+	padding: 1em;
+	width: 80ch;
+	margin: 10vh auto;
+
+	background-color: $c-ggc;
+	color: white;
+    }
+
+    &__discipline {
+	background-color: orangered;
+	color: white;
+
+	margin: 1em;
+    }
+
+    &__opportunity{
+	margin: 1em;
+	padding: 1em;
+	background-color: olivedrab;
+	color: white;
+    }
+}
+
+h1 {
+    margin: 1ch;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
