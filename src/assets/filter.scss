@@ -1,0 +1,6 @@
+$c-filter: $c-ggc-gold;
+
+.filter {
+    border: 2px solid $c-filter;
+    background-color: lighten($c-filter, 20%);
+}
