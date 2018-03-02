@@ -3,3 +3,17 @@
 <link rel="stylesheet" href="assets/commons.css">
 
 {% include w_filter.html %}
+
+<ul class="opp-list">
+  {% for opp in opportunities %}
+  <li class="opp-list__opp{% for d in opp.disciplines %} opp--{{ d }}{% endfor %}">
+    <p class="opp__description">
+      {{ opp.description }}
+    </p>
+    <hr>
+    <span class="opp__professors">
+      {{ opp.professors | join: ", " }}
+    </span>
+  </li>
+  {% endfor %}
+</ul>

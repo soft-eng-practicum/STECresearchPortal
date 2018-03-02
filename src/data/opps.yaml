@@ -1,0 +1,177 @@
+---
+course: "STEC 2500"
+opportunities:
+  - disciplines: ["Biology"]
+    professors: ["cachatme"]
+    description: "Behavioral Neuroscience Investigations of Addiction-Related Phenotypes Using Zebrafish Models"
+
+  - disciplines: ["Biology"]
+    professors: ["cachatme"]
+    description: "Cellular and Behavioral Mechanisms of Nicotine's Neuroprotective"
+
+  - disciplines: ["Biology", "Psychology"]
+    professors: ["mschmolesky", "jtalley"]
+    description: "A behavioral genetics approach to understanding personality traits and risk-taking behaviors."
+
+  - disciplines: ["Chemistry"]
+    professors: ["canfuso", "pbell"]
+    description: "Development of Several Laser Spectroscopic & Thermodynamic Experiments for Physical Chemistry II (CHEM 4202K)"
+
+  - disciplines: ["Chemistry"]
+    professors: ["mkirberger"]
+    description: "Prediction of metal-binding in proteins"
+
+  - disciplines: ["Chemistry"]
+    professors: ["slee34"]
+    description: "Quantitative analysis of the interaction forces between foulants and membranes"
+
+  - disciplines: ["Chemistry"]
+    professors: ["slee34"]
+    description: "Sustainable water reuse and waste management by recycling nutrients"
+
+  - disciplines: ["Chemistry", "Business"]
+    professors: ["amallia", "vbursuc"]
+    description: "Studying the safety operating procedures and regulations for chemicals in undergraduate chemistry labs"
+
+  - disciplines: ["Chemistry", "Physics"]
+    professors: ["nkhan3", "spark1", "dpursell", "kzimmermann"]
+    description: "Analysis of GGC Dining Operations Waste Oil and Grease for use as Biofuel."
+
+  - disciplines: ["Exercise Science"]
+    professors: ["panders1"]
+    description: "Health and Wellness Symposium Report"
+
+  - disciplines: ["Information Technology"]
+    professors: ["ebrannoc"]
+    description: "Exploring a Cutting Edge I/O Device"
+
+  - disciplines: ["Mathematics"]
+    professors: ["aolifer"]
+    description: "Measuring the distance between pieces of information using Kolmogorov complexity."
+
+  - disciplines: ["Mathematics"]
+    professors: ["mstackpo"]
+    description: "Linear Algebra of Robotic Arm Kinematics"
+---
+course: "STEC 4500"
+opportunities:
+
+  - disciplines: ["Biology"]
+    professors: ["cbrandon"]
+    description: "The Anti-Inflammatory Effects of Progesterone in RAW 246.7 cells"
+
+  - disciplines: ["Biology"]
+    professors: ["cbrown37"]
+    description: "Fungal diversity of leaf beetle fecal cases"
+
+  - disciplines: ["Biology"]
+    professors: ["cbrown37"]
+    description: "Small mammal diversity on a suburban campus"
+
+  - disciplines: ["Biology"]
+    professors: ["cbrown37"]
+    description: "Insects on the incline: Diversity of macroinvertebrates across small slopes"
+
+  - disciplines: ["Biology"]
+    professors: ["mcaspary"]
+    description: "Plant Pollinator Networks of the Granite Outcrops and Blackland Prairies in Georgia"
+
+  - disciplines: ["Biology"]
+    professors: ["pdarr", "wdustman"]
+    description: "White Nose Syndrome: Investigations of a Deadly Fungus and its Community Members"
+
+  - disciplines: ["Biology"]
+    professors: ["mfernan2", "jpenn1", "mmalloy"]
+    description: "Brown-headed Nuthatch (Sitta pusilla) Conservation and Avian Diversity"
+
+  - disciplines: ["Biology"]
+    professors: ["rfiorill"]
+    description: "The effects of Alloglossidium progeneticum on agonistic behavior in its host, the crayfish Procambarus spiculifer"
+
+  - disciplines: ["Biology"]
+    professors: ["rfiorill"]
+    description: "Helminth parasites of the Invasive Mayan Cichlid, Cichlasoma urophthalmus, from southern Florida"
+
+  - disciplines: ["Biology"]
+    professors: ["bgeorge"]
+    description: "Using invertebrates as bioindicators of urban stream health."
+
+  - disciplines: ["Biology"]
+    professors: ["lhammond"]
+    description: "Impact of the Biology Program on the Development of Career Readiness Skills"
+
+  - disciplines: ["Biology"]
+    professors: ["ejavazon", "skatzman"]
+    description: "Analyzing the immune response of fish living in different tributaries of the Chattahoochee River"
+
+  - disciplines: ["Biology"]
+    professors: ["skeller6"]
+    description: "Investigation of the functional role of a phospholipase C gene in Trypanosoma brucei using a ribozyme to degrade mRNA"
+
+  - disciplines: ["Biology"]
+    professors: ["jrussell"]
+    description: "The evolutionary ecology of parasitism"
+
+  - disciplines: ["Biology"]
+    professors: ["psakaris"]
+    description: "Age, growth, and condition of sunfishes in an urban stream"
+
+  - disciplines: ["Biology"]
+    professors: ["psakaris"]
+    description: "Evaluating the efficacy of two methods for tagging sunfish"
+
+  - disciplines: ["Biology"]
+    professors: ["psakaris"]
+    description: "Effects of habitat fragmentation on connectivity of redbreast sunfish populations in an urban watershed"
+
+  - disciplines: ["Biology"]
+    professors: ["psakaris"]
+    description: "Comparison of creek chub population characteristics between two urban tributaries of the Chattahoochee River"
+
+  - disciplines: ["Biology"]
+    professors: ["psakaris"]
+    description: "Regional effects of land use on growth of brown bullhead catfish in the Chesapeake Bay Watershed"
+
+  - disciplines: ["Biology"]
+    professors: ["mschluet"]
+    description: "Measuring Native Bee Abundance and Diversity at the Research Orchard at GGC"
+
+  - disciplines: ["Biology"]
+    professors: ["mschluet"]
+    description: "An Assessment of Diversity and Abundance of Mammal Predators in Rural, Suburban, and Urban Parks in Georgia"
+
+  - disciplines: ["Biology"]
+    professors: ["mschluet"]
+    description: "An Assessment Temporal Size Variation in Bumblebees Found in North Georgia Agricultural Areas"
+
+  - disciplines: ["Biology"]
+    professors: ["mschluet"]
+    description: "Measuring the Benefits of Wildflower Plots to Boost Native Bee Abundance in Georgia Apple Orchards"
+
+  - disciplines: ["Biology"]
+    professors: ["esudduth"]
+    description: "Effects of beaver activity on urban streams and wetlands"
+
+  - disciplines: ["Biology"]
+    professors: ["fsun"]
+    description: "A phylogenetic study of the perennial, endemic Apiaceae Subfamily Apiodeae of western North America based on novel plastic DNA"
+
+  - disciplines: ["Biology"]
+    professors: ["fsun"]
+    description: "Evolutionary study of RNA based on phylogenetic investigations of structural evidence"
+
+  - disciplines: ["Biology"]
+    professors: ["jtalley"]
+    description: "Determining correlations between personality traits, risk-taking behaviors and the serotonin gene"
+
+  - disciplines: ["Biology"]
+    professors: ["rward1", "lkurtz", "wdustman", "skeller6"]
+    description: "Production conditions affect on Salmonella load in chicken eggs"
+
+  - disciplines: ["Biology"]
+    professors: ["rward1", "lkurtz", "wdustman", "skeller6"]
+    description: "Contamination in South Asian egg delicacies and the effect of preservation conditions"
+
+  - disciplines: ["Biology"]
+    professors: ["cachatme", "rhaining"]
+    description: "Celluar and Behavioral Mechanisms of Nicotine's Neuroprotective Effects"
