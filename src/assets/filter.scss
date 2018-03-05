@@ -1,6 +1,55 @@
-$c-filter: $c-ggc-gold;
+$c-filter: $c-ggc-gold;;
 
 .filter {
     border: 2px solid $c-filter;
     background-color: lighten($c-filter, 20%);
+}
+
+.wrapper {
+	width: 500px;
+  	margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 5px #1e1e1e;
+}
+
+h1 {
+	color: green;
+    text-align: left;
+	font-weight: bold;
+}
+
+nav {
+	margin-left: 50px;
+}
+
+button {
+	border-radius: 25%;
+	background-color: green;
+	color: white;
+	padding: .8em;
+	margin-left: 200px;
+}
+
+label {
+	color: green;
+	font-weight: bold;
+}
+
+.subjectfilter {
+	padding: 0;
+	padding-left: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.professorfilter {
+	padding: 0;
+	padding-left: 20px;
+	padding-bottom: 15px;
+}
+
+.levelfilter {
+	padding: 0;
+	padding-left: 20px;
+	padding-bottom: 15px;
 }
