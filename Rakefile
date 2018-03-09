@@ -48,6 +48,14 @@ task :list => :styles do
   # assign professor ids to names
   opps.map { |opp| opp["professors"].map! { |prof| PROFS[prof] }}
 
+  # sort opportunities based on discipline.
+  # by design, opportunities crossing multiple disciplines will be
+  # repeated. `obs`, or "opportunities by subject", is an array of
+  # hashes for the sake of the templating system.
+  #
+  # obs contains:
+  #   * name: String (name of the subject)
+  #   * opportunities: Array of Hashes (representing each opp in a subject)
   obs = Array.new
   for subject in subjects
     curr_sub = Hash.new
