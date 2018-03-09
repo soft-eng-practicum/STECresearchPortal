@@ -4,9 +4,11 @@
 
 {% include w_filter.html %}
 
-<ul class="opp-list">
-  {% for opp in opportunities %}
-  <li class="opp-list__opp{% for d in opp.disciplines %} opp--{{ d }}{% endfor %}">
+{% for subject in subjects %}
+<h2 class="opp-list__subject">{{ subject.name }}</h2>
+<ul class="opp-list{% for d in opp.disciplines %} opp--{{ d | truncate: 3, "" }} {% endfor %}">
+  {% for opp in subject.opportunities %}
+  <li class="opp-list__opp">
     <p class="opp__description">
       {{ opp.description }}
     </p>
@@ -17,3 +19,4 @@
   </li>
   {% endfor %}
 </ul>
+  {% endfor %}

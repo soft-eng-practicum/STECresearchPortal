@@ -42,15 +42,29 @@ task :list => :styles do
   # list of opportunities
   # will just read the first "document", STEC 2500, for now
   COURSE  = Psych.load_file("#{DATA_DIR}/opps.yaml")
-  OPPS = COURSE["opportunities"]
+  opps = COURSE["opportunities"]
+  subjects = opps.map { |opp| opp["disciplines"] }.flatten.uniq.sort
 
   # assign professor ids to names
-  OPPS.map { |opp| opp["professors"].map! { |prof| PROFS[prof] }}
+  opps.map { |opp| opp["professors"].map! { |prof| PROFS[prof] }}
+
+  obs = Array.new
+  for subject in subjects
+    curr_sub = Hash.new
+    curr_sub["name"] = subject
+    curr_sub["opportunities"] = Array.new
+
+    for opp in opps
+      curr_sub["opportunities"].push opp if opp["disciplines"].include? subject
+    end
+
+    obs.push curr_sub
+  end
 
   template = Liquid::Template.parse(File.read("#{VIEW_DIR}/index.html"))
   index = File.new("#{APP_DIR}/index.html", "w")
 
-  index.write(template.render({ "opportunities" => OPPS }))
+  index.write(template.render({ "subjects" => obs }))
   index.close
 end
 

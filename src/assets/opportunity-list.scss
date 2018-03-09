@@ -15,6 +15,10 @@
 	border: 2px solid $c-ggc;
     }
 
+    &__subject {
+	display: block;
+    }
+
     &__opp {
 	margin: 1em;
 	padding: 1em;
