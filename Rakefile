@@ -72,7 +72,8 @@ task :list => :styles do
   template = Liquid::Template.parse(File.read("#{VIEW_DIR}/index.html"))
   index = File.new("#{APP_DIR}/index.html", "w")
 
-  index.write(template.render({ "subjects" => obs }))
+  index.write(template.render({ "subjects" => obs,
+                                "professors" => PROFS.to_a }))
   index.close
 end
 

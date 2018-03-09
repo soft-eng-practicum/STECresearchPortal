@@ -14,24 +14,20 @@
     <div class="subjectfilter">
       <label> Subject:
 	<select name="subject" multiple>
-	  <option value="biology">Biology</option>
-	  <option value="chemistry">Chemistry</option>
-	  <option value="exercisescience">Exercise Science</option>
-	  <option value="informationtechnology">Information Technology</option>
-	  <option value="math">Mathematics</option>
-	  <option value="physics">Physics</option>
+	  {% for subject in subjects %}
+	  {% assign name = subject.name %}
+	  <option value="{{ name | truncate: 3, "" }}">{{ name }}</option>
+	  {% endfor %}
 	</select>
       </label>
     </div>
 
     <div class="professorfilter">
       <label> Professor:
-	<select name="professor">
-	  <option value="olifer">Dr. Andrei Olifer</option>
-	  <option value="anderson">Dr. Pamela Anderson</option>
-	  <option value="kirburger">Dr. Michael Kirburger</option>
-	  <option value="brannock">Dr. Evelyn Brannock</option>
-	  <option value="chen">Dr. Karui Chen</option>
+	<select name="professor" multiple>
+	  {% for prof in professors %}
+	  <option value="{{ prof[0] }}">{{ prof[1] }}</option>
+	  {% endfor %}
 	</select>
       </label>
     </div>
