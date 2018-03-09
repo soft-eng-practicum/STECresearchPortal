@@ -2,11 +2,57 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="assets/commons.css">
 
-{% include w_filter.html %}
+
+<div class="wrapper">
+  <div class="filter">
+    <h1>Filter:</h1>
+
+    <nav>
+      <a href="https://my.ggc.edu/group/guest/sst-research">Return to Previous Page</a>
+    </nav>
+
+    <div class="subjectfilter">
+      <label> Subject:
+	<select name="subject" multiple>
+	  <option value="biology">Biology</option>
+	  <option value="chemistry">Chemistry</option>
+	  <option value="exercisescience">Exercise Science</option>
+	  <option value="informationtechnology">Information Technology</option>
+	  <option value="math">Mathematics</option>
+	  <option value="physics">Physics</option>
+	</select>
+      </label>
+    </div>
+
+    <div class="professorfilter">
+      <label> Professor:
+	<select name="professor">
+	  <option value="olifer">Dr. Andrei Olifer</option>
+	  <option value="anderson">Dr. Pamela Anderson</option>
+	  <option value="kirburger">Dr. Michael Kirburger</option>
+	  <option value="brannock">Dr. Evelyn Brannock</option>
+	  <option value="chen">Dr. Karui Chen</option>
+	</select>
+      </label>
+    </div>
+
+    <div class="levelfilter">
+      <label> Level:
+	<select name="level">
+	  <option value="stec2500">STEC 2500</option>
+	  <option value="stec4500">STEC 4500</option>
+	</select>
+      </label>
+    </div>
+
+    <button type="search">Search</button>
+  </div>
+</div>
+
 
 {% for subject in subjects %}
-<h2 class="opp-list__subject">{{ subject.name }}</h2>
 <ul class="opp-list{% for d in opp.disciplines %} opp--{{ d | truncate: 3, "" }} {% endfor %}">
+  <h2 class="opp-list__subject">{{ subject.name }}</h2>
   {% for opp in subject.opportunities %}
   <li class="opp-list__opp">
     <p class="opp__description">
