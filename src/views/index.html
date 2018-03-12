@@ -3,49 +3,48 @@
 <link rel="stylesheet" href="assets/commons.css">
 
 
-<div class="wrapper">
-  <div class="filter">
-    <h1>Filter:</h1>
+<div class="sidebar">
+  <h1 class="sidebar__title">STEC Research Portal</h1>
+  <!-- <h1>Filter:</h1> -->
 
-    <nav>
-      <a href="https://my.ggc.edu/group/guest/sst-research">Return to Previous Page</a>
-    </nav>
-
-    <div class="subjectfilter">
-      <label> Subject:
-	<select name="subject" multiple>
-	  {% for subject in subjects %}
-	  {% assign name = subject.name %}
-	  <option value="{{ name | truncate: 3, "" }}">{{ name }}</option>
-	  {% endfor %}
-	</select>
-      </label>
-    </div>
-
-    <div class="professorfilter">
-      <label> Professor:
-	<select name="professor" multiple>
-	  {% for prof in professors %}
-	  <option value="{{ prof[0] }}">{{ prof[1] }}</option>
-	  {% endfor %}
-	</select>
-      </label>
-    </div>
-
-    <div class="levelfilter">
-      <label> Level:
-	<select name="level">
-	  <option value="stec2500">STEC 2500</option>
-	  <option value="stec4500">STEC 4500</option>
-	</select>
-      </label>
-    </div>
-
-    <button type="search">Search</button>
+  <div class="subjectfilter">
+    <label> Subject:
+      <select name="subject">
+  	<option value="any-subject">Any Subject</option>
+  	{% for subject in subjects %}
+  	{% assign name = subject.name %}
+  	<option value="{{ name | truncate: 3, "" }}">{{ name }}</option>
+  	{% endfor %}
+      </select>
+    </label>
   </div>
+
+  <div class="professorfilter">
+    <label> Professor:
+      <select name="professor">
+  	<option value="any-prof">Any Professor</option>
+  	{% for prof in professors %}
+  	<option value="{{ prof[0] }}">{{ prof[1] }}</option>
+  	{% endfor %}
+      </select>
+    </label>
+  </div>
+
+  <div class="levelfilter">
+    <label> Level:
+      <select name="level">
+  	<option value="any-course">Any Course</option>
+  	<option value="stec2500">STEC 2500</option>
+  	<option value="stec4500">STEC 4500</option>
+      </select>
+    </label>
+  </div>
+
+  <!-- <button type="search">Search</button> -->
 </div>
 
 
+<div class="content">
 {% for subject in subjects %}
 <ul class="opp-list{% for d in opp.disciplines %} opp--{{ d | truncate: 3, "" }} {% endfor %}">
   <h2 class="opp-list__subject">{{ subject.name }}</h2>
@@ -54,7 +53,7 @@
     <p class="opp__description">
       {{ opp.description }}
     </p>
-    <hr>
+    <br>
     <span class="opp__professors">
       {{ opp.professors | join: ", " }}
     </span>
@@ -62,3 +61,4 @@
   {% endfor %}
 </ul>
   {% endfor %}
+</div>
