@@ -54,6 +54,19 @@
     & .opp__professors {
 	font-size: 10px;
 	font-weight: bold;
+
+	& .professor {
+	    background-color: $c-ggc;
+	    color: white;
+
+	    border: 1px solid $c-ggc-d;
+	    padding: 2px;
+	    margin-right: 4px;
+
+	    &:hover {
+		text-decoration: underline;
+	    }
+	}
     }
 }
 

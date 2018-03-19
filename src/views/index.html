@@ -55,7 +55,12 @@
     </p>
     <br>
     <span class="opp__professors">
-      {{ opp.professors | join: ", " }}
+      {% for prof in opp.professors %}
+      {% assign slug = prof | downcase | replace: " ", "-" %}
+      <a class="professor" href="http://ggc.edu/about-ggc/directory/{{ slug }}">
+	{{ prof }}
+      </a>
+      {% endfor %}
     </span>
   </li>
   {% endfor %}
