@@ -46,7 +46,7 @@
 
 <div class="content">
 {% for subject in subjects %}
-<ul class="opp-list{% for d in opp.disciplines %} opp--{{ d | truncate: 3, "" }} {% endfor %}">
+<ul class="opp-list list--{{ subject.name | truncate: 3, "" }}">
   <h2 class="opp-list__subject">{{ subject.name }}</h2>
   {% for opp in subject.opportunities %}
   <li class="opp-list__opp">
