@@ -9,11 +9,11 @@
 
   <div class="subjectfilter">
     <label> Subject:
-      <select id = "filter__subject" name="subject" onchange = "hideProjectBySubject()">
+      <select id="filter__subject" name="subject" onchange="hideProjectBySubject()">
   	<option value="any-subject">Any Subject</option>
   	{% for subject in subjects %}
-  	{% assign name = subject.name %}
-  	<option value="{{ name | truncate: 3, "" }}">{{ name }}</option>
+  	{% assign slug = subject.name | truncate: 3, "" %}
+	<option value="{{ slug }}">{{ subject.name }}</option>
   	{% endfor %}
       </select>
     </label>
@@ -46,7 +46,7 @@
 
 <div class="content">
 {% for subject in subjects %}
-<ul class="opp-list list--{{ subject.name | truncate: 3, "" }}">
+<ul class="opp-list" id="list--{{ subject.name | truncate: 3, "" }}">
   <h2 class="opp-list__subject">{{ subject.name }}</h2>
   {% for opp in subject.opportunities %}
   <li class="opp-list__opp">
@@ -69,13 +69,19 @@
 </div>
 
 <script>
-function hideProjectBySubject() {
-	var x = document.getElementsByClassName("content")[0];
-	if (x.style.visibility === "hidden") {
-		x.style.visibility = "visible";
-		}
-	else {
-		x.style.visibility = "hidden";
-		}
+  function hideProjectBySubject() {
+    var subject = document.getElementById("filter__subject").value;
+    
+    // var x = document.getElementsByClassName("content")[0];
+    var x = document.getElementById("list--" + subject);
+    
+    if (x.style.display === "none") {
+	x.style.display = "block";
+    }
+    else {
+	x.style.display = "none";
+    }
 }
+
 </script>
+
