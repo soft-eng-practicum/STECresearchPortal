@@ -71,17 +71,100 @@
 <script>
   function hideProjectBySubject() {
     var subject = document.getElementById("filter__subject").value;
+	
+	if (subject === "any-subject") {
+		document.getElementById("list--Bio").style.display = "block";
+		document.getElementById("list--Bus").style.display = "block";
+		document.getElementById("list--Che").style.display = "block";
+		document.getElementById("list--Exe").style.display = "block";
+		document.getElementById("list--Inf").style.display = "block";
+		document.getElementById("list--Mat").style.display = "block";
+		document.getElementById("list--Phy").style.display = "block";
+		document.getElementById("list--Psy").style.display = "block";
+	}
+	else {
+	
     
-    // var x = document.getElementsByClassName("content")[0];
-    var x = document.getElementById("list--" + subject);
+		// var x = document.getElementsByClassName("content")[0];
+		var x = document.getElementById("list--" + subject);
+		x.style.display = "block";
     
-    if (x.style.display === "none") {
-	x.style.display = "block";
-    }
-    else {
-	x.style.display = "none";
-    }
+		if (subject === "Bio") {
+			document.getElementById("list--Bus").style.display = "none";
+			document.getElementById("list--Che").style.display = "none";
+			document.getElementById("list--Exe").style.display = "none";
+			document.getElementById("list--Inf").style.display = "none";
+			document.getElementById("list--Mat").style.display = "none";
+			document.getElementById("list--Phy").style.display = "none";
+			document.getElementById("list--Psy").style.display = "none";
+		}
+		else if (subject === "Bus") {
+			document.getElementById("list--Bio").style.display = "none";
+			document.getElementById("list--Che").style.display = "none";
+			document.getElementById("list--Exe").style.display = "none";
+			document.getElementById("list--Inf").style.display = "none";
+			document.getElementById("list--Mat").style.display = "none";
+			document.getElementById("list--Phy").style.display = "none";
+			document.getElementById("list--Psy").style.display = "none";
+		}
+		else if (subject === "Che") {
+			document.getElementById("list--Bio").style.display = "none";
+			document.getElementById("list--Bus").style.display = "none";
+			document.getElementById("list--Exe").style.display = "none";
+			document.getElementById("list--Inf").style.display = "none";
+			document.getElementById("list--Mat").style.display = "none";
+			document.getElementById("list--Phy").style.display = "none";
+			document.getElementById("list--Psy").style.display = "none";
+		}
+		else if (subject === "Exe") {
+			document.getElementById("list--Bio").style.display = "none";
+			document.getElementById("list--Che").style.display = "none";
+			document.getElementById("list--Bus").style.display = "none";
+			document.getElementById("list--Inf").style.display = "none";
+			document.getElementById("list--Mat").style.display = "none";
+			document.getElementById("list--Phy").style.display = "none";
+			document.getElementById("list--Psy").style.display = "none";
+		}
+		else if (subject === "Inf") {
+			document.getElementById("list--Bio").style.display = "none";
+			document.getElementById("list--Che").style.display = "none";
+			document.getElementById("list--Exe").style.display = "none";
+			document.getElementById("list--Bus").style.display = "none";
+			document.getElementById("list--Mat").style.display = "none";
+			document.getElementById("list--Phy").style.display = "none";
+			document.getElementById("list--Psy").style.display = "none";
+		}
+		else if (subject === "Mat") {
+			document.getElementById("list--Bio").style.display = "none";
+			document.getElementById("list--Che").style.display = "none";
+			document.getElementById("list--Exe").style.display = "none";
+			document.getElementById("list--Inf").style.display = "none";
+			document.getElementById("list--Bus").style.display = "none";
+			document.getElementById("list--Phy").style.display = "none";
+			document.getElementById("list--Psy").style.display = "none";
+		}
+		else if (subject === "Phy") {
+			document.getElementById("list--Bio").style.display = "none";
+			document.getElementById("list--Che").style.display = "none";
+			document.getElementById("list--Exe").style.display = "none";
+			document.getElementById("list--Inf").style.display = "none";
+			document.getElementById("list--Mat").style.display = "none";
+			document.getElementById("list--Bus").style.display = "none";
+			document.getElementById("list--Psy").style.display = "none";
+		}
+		else if (subject === "Psy") {
+			document.getElementById("list--Bio").style.display = "none";
+			document.getElementById("list--Che").style.display = "none";
+			document.getElementById("list--Exe").style.display = "none";
+			document.getElementById("list--Inf").style.display = "none";
+			document.getElementById("list--Mat").style.display = "none";
+			document.getElementById("list--Phy").style.display = "none";
+			document.getElementById("list--Bus").style.display = "none";
+		}
+	}
 }
+
+  
 
 </script>
 
