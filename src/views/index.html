@@ -169,7 +169,15 @@
 function hideProjectByProfessor() {
 	var professor = document.getElementById("filter__professor").value;
 	var opps = document.getElementsByClassName("opp-list__opp");
-	var profs = opps[3].getElementsByClassName("professor");
+	var profs = document.getElementsByClassName("professor");
+	
+	for (var i = 0; i < professor.length; i++) {
+		if (document.getElementById("filter__professor")[i].value === professor) {
+			var num = document.getElementById("filter__professor")[i];
+			console.log(num);
+			break;
+		}
+	}
 	
 	if (professor === "any-prof") {
 		for (var i = 0; i < opps.length; i++) {
@@ -177,14 +185,19 @@ function hideProjectByProfessor() {
 		}
 	}
 	else {
-		for (var i = 0; i < opps.length; i++) {
-			for (var j = 0; j < profs.length; j++) {
-				if (professor.textContent === profs[j].textContent) {
-					opps[i].style.display = "block";
-				}
-				else {
-					opps[i].style.display = "none";
-				}
+		for (var j = 0; j < profs.length; j++) {
+			console.log(num.innerText);
+			console.log(profs[j].innerText);
+			for (var k = 0; k < opps.length; k++) {
+			
+			if (num.innerText === profs[j].innerText) {
+				opps[k].style.display = "block";
+				console.log("yes");
+			}
+			else {
+				opps[k].style.display = "none";
+				console.log("no");
+			}
 			}
 		}
 	}
